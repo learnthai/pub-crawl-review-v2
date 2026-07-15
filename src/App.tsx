@@ -24,7 +24,7 @@ export default function App() {
           <PlatformSelector route={route} onBack={() => setRoute(null)} />
         )}
       </div>
-      <footer className="mt-8 text-sm text-[#817878] font-bold">
+      <footer className="mt-[41px] -mr-[23px] text-sm text-[#817878] font-bold">
         TourMeAway
       </footer>
     </main>
