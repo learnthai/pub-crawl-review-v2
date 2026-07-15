@@ -1,0 +1,6 @@
+{
+  "name": "Pub Crawl Review",
+  "description": "A mobile-first app for Pub Crawl guests to easily leave reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
