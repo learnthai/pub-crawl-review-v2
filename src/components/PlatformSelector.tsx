@@ -9,7 +9,7 @@ interface Props {
 export default function PlatformSelector({ route, onBack }: Props) {
   const handleSelect = (platform: Platform) => {
     let url = '';
-    if (platform === 'Google') {
+    if (platform === 'Google' || platform === 'Others') {
       url = googleMapsLinks[route];
     } else {
       url = platforms.find(p => p.id === platform)?.url || '';
@@ -27,6 +27,7 @@ export default function PlatformSelector({ route, onBack }: Props) {
       case 'Viator': return `${base} bg-[#a7d68b]`;
       case 'FreeTour': return `${base} bg-[#fec34c]`;
       case 'Google': return `${base} bg-[#3ba0dd]`;
+      case 'Others': return `${base} bg-[#a172b9]`;
       default: return `${base} bg-white text-black`;
     }
   }
